@@ -1,0 +1,1 @@
+Coloca aquí fotos mes-01.jpg a mes-12.jpg y configura sus rutas en js/config.js.

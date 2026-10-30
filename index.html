@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+  <meta content="#faf9f4" name="theme-color"/>
+  <title>
+   Eliam Rafael · Mi primer añito
+  </title>
+  <meta content="¡La laguna está de fiesta! Te invitamos a celebrar el primer cumpleaños de Eliam Rafael." name="description"/>
+  <meta content="Eliam Rafael cumple un añito" property="og:title"/>
+  <meta content="Ven a celebrar con nosotros. ¡La laguna está de fiesta!" property="og:description"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="wrap topbar">
+   <div class="mark">
+    <i>
+     1
+    </i>
+    <span>
+     ELIAM · 1 AÑITO
+    </span>
+   </div>
+ 
+<div class="header-actions">
+  <button
+    class="music-pill floating-music"
+    id="musicBtn"
+    type="button"
+    aria-label="Reproducir música"
+    aria-pressed="false"
+  >
+    <span class="sound-icon" id="musicIcon" aria-hidden="true">
+      ▶
+    </span>
+    <span id="musicBtnText">Escuchar</span>
+  </button>
+</div>
+
+  </header>
+  <main>
+   <section aria-labelledby="title" class="wrap hero">
+    <p class="eyebrow">
+     ¡Una celebración muy especial!
+    </p>
+    <h1 class="name" id="title">
+     Eliam Rafael
+    </h1>
+    <p class="celebrate">
+     cumple 1 añito
+    </p>
+    <div class="hero-art">
+     <div class="blob">
+     </div>
+     <span class="dot a">
+     </span>
+     <span class="dot b">
+     </span>
+     <span class="dot c">
+     </span>
+     <span class="dot d">
+     </span>
+     <img alt="El Monstruo de la Laguna, ilustración estilo sticker de papel recortado" src="assets/monstruo-laguna.webp"/>
+    </div>
+    <p class="tagline">
+     La laguna está de fiesta.
+    </p>
+    <p class="intro">
+     Queremos compartir contigo un día lleno de cariño, risas y momentos inolvidables. ¡Nos encantará celebrar juntos!
+    </p>
+    <div class="thin-divider">
+    </div>
+   </section>
+   <section aria-labelledby="headingDetails" class="details wrap" id="detalles">
+    <p class="micro">
+     Reserva este día
+    </p>
+    <h2 id="headingDetails">
+     Te esperamos para celebrar
+    </h2>
+    <div class="detail-grid">
+     <div class="detail">
+      <div class="type">
+       Fecha
+      </div>
+      <div class="value" id="displayDate">
+       Por confirmar
+      </div>
+      <p class="extra">
+       El gran día
+      </p>
+     </div>
+     <div class="detail">
+      <div class="type">
+       Hora
+      </div>
+      <div class="value" id="displayTime">
+       Por confirmar
+      </div>
+      <p class="extra">
+       Inicio de la fiesta
+      </p>
+     </div>
+     <div class="detail">
+      <div class="type">
+       Lugar
+      </div>
+      <div class="value" id="displayPlace">
+       Por confirmar
+      </div>
+      <p class="extra" id="displayAddress">
+      </p>
+     </div>
+    </div>
+    <p aria-live="polite" class="countdown-pending" id="countdownPending">
+     La cuenta regresiva comenzará cuando confirmemos la fecha.
+    </p>
+    <div class="countdown" hidden="" id="countdown">
+     <div class="time-unit">
+      <strong id="d">
+       00
+      </strong>
+      <small>
+       días
+      </small>
+     </div>
+     <div class="time-unit">
+      <strong id="h">
+       00
+      </strong>
+      <small>
+       horas
+      </small>
+     </div>
+     <div class="time-unit">
+      <strong id="m">
+       00
+      </strong>
+      <small>
+       min
+      </small>
+     </div>
+     <div class="time-unit">
+      <strong id="s">
+       00
+      </strong>
+      <small>
+       seg
+      </small>
+     </div>
+    </div>
+    <div class="actions">
+     <button class="primary" id="rsvpBtn" type="button">
+      Confirmar asistencia
+     </button>
+     <a aria-disabled="true" class="outline" href="#detalles" id="mapsLink">
+      Cómo llegar
+     </a>
+    </div>
+   </section>
+   <section class="story" id="mis12meses" aria-labelledby="headingStory">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="micro">Mi primer año · Temporada 01</p>
+      <h2 class="section-title" id="headingStory">12 meses, infinitas aventuras</h2>
+      <p class="section-copy">Una historia en doce capítulos. Desliza para descubrir los momentos que hicieron especial mi primer año.</p>
+    </div>
+    <div class="cinema" id="cinemaGallery">
+      <div class="cinema-toolbar">
+        <span class="cinema-kicker">EL ÁLBUM DE ELIAM</span>
+        <span class="cinema-counter" id="cinemaCounter" aria-live="polite">01 / 12</span>
+      </div>
+      <div class="cinema-track" id="monthsGrid" tabindex="0" role="region" aria-label="Carrusel de los doce meses de Eliam. Desliza a los lados o usa las flechas del teclado.">
+      </div>
+      <div class="cinema-controls">
+        <button type="button" class="cinema-arrow" id="cinemaPrev" aria-label="Ver mes anterior">&#8592;</button>
+        <div class="cinema-progress" role="progressbar" aria-label="Avance del álbum" aria-valuemin="1" aria-valuemax="12" aria-valuenow="1" id="cinemaProgress"><span id="cinemaProgressFill"></span></div>
+        <button type="button" class="cinema-arrow" id="cinemaNext" aria-label="Ver mes siguiente">&#8594;</button>
+      </div>
+      <p class="cinema-tip">Desliza el catálogo o toca una fotografía para ampliarla.</p>
+    </div>
+  </div>
+</section>
+<div class="cinema-lightbox" id="cinemaLightbox" hidden role="dialog" aria-modal="true" aria-label="Fotografía del primer año de Eliam">
+  <button class="cinema-lightbox-close" type="button" id="cinemaLightboxClose" aria-label="Cerrar fotografía">&times;</button>
+  <button class="cinema-lightbox-nav" type="button" id="cinemaLightboxPrev" aria-label="Foto anterior">&#8592;</button>
+  <figure class="cinema-lightbox-figure">
+    <img id="cinemaLightboxImage" alt="Fotografía de Eliam" />
+    <figcaption id="cinemaLightboxCaption"></figcaption>
+  </figure>
+  <button class="cinema-lightbox-nav" type="button" id="cinemaLightboxNext" aria-label="Foto siguiente">&#8594;</button>
+</div>
+   <section aria-labelledby="headingWishes" class="wishes" id="buenosDeseos">
+    <div class="wrap">
+     <div class="section-head">
+      <p class="micro">
+       Libro de buenos deseos
+      </p>
+      <h2 class="section-title" id="headingWishes">
+       Déjale un mensajito a Eliam
+      </h2>
+      <p class="section-copy">
+       Escribe un deseo, una felicitación o unas palabras bonitas para Eliam Rafael. Al enviar, se abrirá tu correo electrónico listo para mandarlo a su buzón especial.
+      </p>
+      <div class="email-chip">
+       ✉️ eliam.rafael@outlook.com
+      </div>
+     </div>
+     <div class="wish-shell">
+      <form id="wishForm">
+       <div class="wish-grid">
+        <div class="field">
+         <label for="wishName">
+          Tu nombre
+         </label>
+         <input id="wishName" placeholder="Escribe tu nombre" required="" type="text"/>
+        </div>
+        <div class="field">
+         <label for="wishRelation">
+          ¿Quién eres para Eliam? (opcional)
+         </label>
+         <input id="wishRelation" placeholder="Ej. Tía, abuelo, amiga de la familia" type="text"/>
+        </div>
+       </div>
+       <div class="field">
+        <label for="wishMessage">
+         Tu deseo para Eliam Rafael
+        </label>
+        <textarea id="wishMessage" placeholder="Escribe aquí tu mensaje bonito para Eliam..." required=""></textarea>
+       </div>
+       <div class="wish-actions">
+        <button class="primary" type="submit">
+         Enviar por correo
+        </button>
+        <button class="secondary-action" id="copyWishBtn" type="button">
+         Copiar mensaje
+        </button>
+       </div>
+       <p class="wish-note">
+        Al tocar
+        <strong>
+         Enviar por correo
+        </strong>
+        , se abrirá tu aplicación de correo con el destinatario, asunto y mensaje listos.
+        <strong>
+         Deberás pulsar Enviar
+        </strong>
+        en esa aplicación. Si prefieres, también puedes copiar el texto y enviarlo después.
+       </p>
+      </form>
+     </div>
+    </div>
+   </section>
+   <section class="end">
+    <div class="wrap">
+     <div class="one">
+      1
+     </div>
+     <p>
+      ¡Tu presencia será nuestro mejor regalo!
+     </p>
+     <small>
+      CON CARIÑO, LA FAMILIA DE ELIAM
+     </small>
+    </div>
+   </section>
+  </main>
+  <footer class="foot">
+   Invitación familiar inspirada en El Monstruo de la Laguna · Canticuénticos. Diseño no oficial.
+  </footer>
+  <audio aria-label="Música de la invitación" id="partyAudio" loop="" preload="none">
+  </audio>
+  <div class="overlay" id="editModal">
+   <div aria-labelledby="editTitle" aria-modal="true" class="dialog" role="dialog">
+    <button aria-label="Cerrar" class="close" data-close="editModal" type="button">
+     ×
+    </button>
+    <h3 id="editTitle">
+     Personalizar invitación
+    </h3>
+    <p>
+     Agrega los datos de la fiesta. Agrega los datos de la fiesta. Guarda para probarlos y descarga la configuración para actualizar tu proyecto en VS Code.
+    </p>
+    <form id="editForm">
+     <div class="field">
+      <label for="dateInput">
+       Fecha
+      </label>
+      <input id="dateInput" type="date"/>
+     </div>
+     <div class="field">
+      <label for="timeInput">
+       Hora
+      </label>
+      <input id="timeInput" type="time"/>
+     </div>
+     <div class="field">
+      <label for="placeInput">
+       Lugar
+      </label>
+      <input id="placeInput" placeholder="Ej. Salón La Laguna" type="text"/>
+     </div>
+     <div class="field">
+      <label for="addressInput">
+       Dirección
+      </label>
+      <input id="addressInput" placeholder="Calle, colonia y ciudad" type="text"/>
+     </div>
+     <div class="field">
+      <label for="mapsInput">
+       Enlace de Google Maps
+      </label>
+      <input id="mapsInput" placeholder="https://maps.app.goo.gl/..." type="url"/>
+     </div>
+     <div class="field">
+      <label for="phoneInput">
+       WhatsApp para confirmaciones
+      </label>
+      <input id="phoneInput" placeholder="Ej. 529211234567" type="tel"/>
+     </div>
+     <p class="info">
+      Número en formato internacional, con código 52 para México, sin espacios.
+     </p>
+     <div class="field" style="margin-top:19px">
+      <label for="musicInput">
+       Música de fondo (opcional)
+      </label>
+      <input accept="audio/mpeg,audio/mp3,audio/mp4,audio/x-m4a,audio/ogg,audio/wav,.mp3,.m4a,.ogg,.wav" class="music-file" id="musicInput" type="file"/>
+      <span class="music-help">
+       Elige una canción desde tu celular o computadora. Recomendamos MP3 de menos de 12 MB. Se puede incluir en la configuración al exportarla. Para un sitio más ligero, coloca el MP3 en assets/audio y utiliza la ruta desde js/config.js.
+      </span>
+      <div class="music-state" id="musicState">
+       Todavía no se ha seleccionado una canción.
+      </div>
+      <button class="remove-music" hidden="" id="removeMusicBtn" type="button">
+       Quitar canción
+      </button>
+     </div>
+     <div class="modal-actions">
+      <button class="primary" type="submit">
+       Guardar datos
+      </button>
+      <button class="outline" id="downloadBtn" type="button">
+       Descargar config.js
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <div class="overlay" id="rsvpModal">
+   <div aria-labelledby="rsvpTitle" aria-modal="true" class="dialog" role="dialog">
+    <button aria-label="Cerrar" class="close" data-close="rsvpModal" type="button">
+     ×
+    </button>
+    <h3 id="rsvpTitle">
+     Confirmar asistencia
+    </h3>
+    <p>
+     ¡Qué alegría! Déjanos tus datos para preparar tu confirmación por WhatsApp.
+    </p>
+    <form id="rsvpForm">
+     <div class="field">
+      <label for="guestName">
+       Tu nombre
+      </label>
+      <input id="guestName" placeholder="Nombre" required=""/>
+     </div>
+     <div class="field">
+      <label for="guestCount">
+       Personas que asistirán
+      </label>
+      <input id="guestCount" max="20" min="1" required="" type="number" value="1"/>
+     </div>
+     <button class="primary" style="width:100%" type="submit">
+      Enviar confirmación
+     </button>
+     <p class="info" id="waHint" style="margin-top:14px">
+     </p>
+    </form>
+   </div>
+  </div>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script defer="" src="js/config.js">
+  </script>
+  <script defer="" src="js/app.js">
+  </script>
+ </body>
+</html>
