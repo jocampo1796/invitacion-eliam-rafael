@@ -1,7 +1,7 @@
 // Configuración exportada para la invitación de Eliam Rafael.
 window.INVITATION_CONFIG = {
   "date": "2026-10-31",
-  "time": "16:30",
+  "time": "17:00",
   "place": "Casa de mi Abuelita Ana",
   "address": "Palomas #39 Col. Santa Isabel 3era Etapa.",
   "mapsUrl": "https://maps.app.goo.gl/gFW7RmJXJsj8aNgJA",
